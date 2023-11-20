@@ -2,8 +2,8 @@ import json
 
 from peewee import *
 
-from db.db import db
-from db.map_area import MapArea
+from .db import db
+from .map_area import MapArea
 
 # A block entity spawned in the world
 class Block(Model):

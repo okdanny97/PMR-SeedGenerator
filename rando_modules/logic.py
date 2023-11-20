@@ -5,13 +5,13 @@ the game according to the settings chosen.
 import random
 #import logging
 
-from db.node import Node
-from db.item import Item
-from db.map_area import MapArea
+from ..db.node import Node
+from ..db.item import Item
+from ..db.map_area import MapArea
 
-from models.MarioInventory import MarioInventory
+from ..models.MarioInventory import MarioInventory
 
-from rando_enums.enum_options import (
+from ..rando_enums.enum_options import (
     BowserCastleMode,
     GearShuffleMode,
     StartingBoots,
@@ -21,14 +21,14 @@ from rando_enums.enum_options import (
     PartnerUpgradeShuffle
 )
 
-from rando_modules.modify_itempool \
+from ..rando_modules.modify_itempool \
     import get_randomized_itempool,\
            get_trapped_itempool
 
-from rando_modules.unbeatable_seed_error import UnbeatableSeedError
+from ..rando_modules.unbeatable_seed_error import UnbeatableSeedError
 
-from metadata.itemlocation_replenish import replenishing_itemlocations
-from metadata.itemlocation_special import \
+from ..metadata.itemlocation_replenish import replenishing_itemlocations
+from ..metadata.itemlocation_special import \
     kootfavors_reward_locations,          \
     kootfavors_keyitem_locations,         \
     chainletter_giver_locations,          \
@@ -41,17 +41,17 @@ from metadata.itemlocation_special import \
     overworld_coin_locations,             \
     block_coin_locations,                 \
     favor_coin_locations
-from metadata.progression_items                                 \
+from ..metadata.progression_items                                 \
     import progression_miscitems as progression_miscitems_names, \
            progression_items
-from metadata.item_exclusion \
+from ..metadata.item_exclusion \
     import exclude_due_to_settings, exclude_from_taycet_placement
-from metadata.item_general import taycet_items, progressive_badges
-from metadata.node_exclusion import exclude_from_trap_placement
+from ..metadata.item_general import taycet_items, progressive_badges
+from ..metadata.node_exclusion import exclude_from_trap_placement
 
-from metadata.verbose_area_names import verbose_area_names
-from metadata.verbose_item_names import verbose_item_names
-from metadata.verbose_item_locations import verbose_item_locations
+from ..metadata.verbose_area_names import verbose_area_names
+from ..metadata.verbose_item_names import verbose_item_names
+from ..metadata.verbose_item_locations import verbose_item_locations
 
 def get_startingnode_id_from_startingmap_id(starting_map_id):
     """Returns the starting node id (e.g. "MAC_00/4") for a given map id."""

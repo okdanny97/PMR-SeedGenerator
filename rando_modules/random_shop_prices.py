@@ -1,8 +1,8 @@
 import random
 
-from db.node import Node
+from ..db.node import Node
 
-from rando_enums.enum_options import MerlowRewardPricing
+from ..rando_enums.enum_options import MerlowRewardPricing
 
 
 def get_shop_price(

@@ -2,8 +2,8 @@ import xml.etree.ElementTree as ET
 
 from peewee import *
 from playhouse.migrate import *
-from db.db import db
-from db.map_meta import MapMeta
+from .db import db
+from .map_meta import MapMeta
 
 
 class MapArea(Model):

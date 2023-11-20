@@ -4,9 +4,9 @@ import xml.etree.ElementTree as ET
 
 from peewee import *
 from playhouse.migrate import *
-from db.db import db
+from .db import db
 
-from metadata.verbose_map_names import map_name_corrections
+from ..metadata.verbose_map_names import map_name_corrections
 
 class MapMeta(Model):
     name = CharField(null=False)

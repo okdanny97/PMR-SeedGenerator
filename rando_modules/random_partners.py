@@ -1,8 +1,8 @@
 """This module handles choosing random partners to start the seed with."""
 import random
 
-from metadata.partners_meta import all_partners as all_partners_imp
-from models.options.OptionSet import OptionSet
+from ..metadata.partners_meta import all_partners as all_partners_imp
+from ..models.options.OptionSet import OptionSet
 
 def get_rnd_starting_partners(
     num_rnd_partners_min:int,

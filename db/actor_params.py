@@ -7,7 +7,7 @@ import os
 
 from peewee import CharField, IntegerField, Model
 from playhouse.migrate import *
-from db.db import db
+from .db import db
 
 
 class ActorParam(Model):

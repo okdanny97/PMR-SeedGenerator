@@ -9,9 +9,9 @@ A7000401 : 000F0002
 from copy import deepcopy
 import random
 
-from rando_enums.enum_options import MusicRandomizationType
-from rando_enums.enum_types import SongType
-from metadata.song_data import SongData, song_data_array
+from ..rando_enums.enum_options import MusicRandomizationType
+from ..rando_enums.enum_types import SongType
+from ..metadata.song_data import SongData, song_data_array
 
 def get_randomized_audio(
     randomize_bgm:bool,

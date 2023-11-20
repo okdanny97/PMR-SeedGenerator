@@ -4,7 +4,7 @@ import json
 
 import xml.dom.minidom
 
-from utility import get_files
+from .utility import get_files
 
 
 def gather_keys():

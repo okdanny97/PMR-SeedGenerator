@@ -3,12 +3,12 @@ from pathlib import Path
 
 from peewee import *
 
-from db.db import db
-from db.map_area import MapArea
-from db.item import Item
+from .db import db
+from .map_area import MapArea
+from .item import Item
 
-from metadata.item_source_types import item_source_types
-from metadata.spoilerlog_order import custom_map_order
+from ..metadata.item_source_types import item_source_types
+from ..metadata.spoilerlog_order import custom_map_order
 
 # A table that represents all areas of interactivity
 class Node(Model):

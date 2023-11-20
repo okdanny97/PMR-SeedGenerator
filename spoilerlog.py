@@ -1,18 +1,18 @@
 import io
 import json
 
-from db.move import Move
-from db.map_area import MapArea
-from db.node import Node
+from .db.move import Move
+from .db.map_area import MapArea
+from .db.node import Node
 
-from rando_enums.enum_types import BlockType
+from .rando_enums.enum_types import BlockType
 
-from metadata.partners_meta import partner_moves
-from metadata.verbose_area_names import verbose_area_names
-from metadata.verbose_item_names import verbose_item_names
-from metadata.verbose_item_locations import verbose_item_locations
+from .metadata.partners_meta import partner_moves
+from .metadata.verbose_area_names import verbose_area_names
+from .metadata.verbose_item_names import verbose_item_names
+from .metadata.verbose_item_locations import verbose_item_locations
 
-from models.options.OptionSet import OptionSet
+from .models.options.OptionSet import OptionSet
 
 def write_spoiler_log(
     placed_items:list,

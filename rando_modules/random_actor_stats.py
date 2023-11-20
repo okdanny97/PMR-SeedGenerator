@@ -1,7 +1,7 @@
 import random
 
-from db.actor_attribute import ActorAttribute
-from db.actor_params import ActorParam
+from ..db.actor_attribute import ActorAttribute
+from ..db.actor_params import ActorParam
 
 def get_shuffled_chapter_difficulty(
     shuffle_chapter_difficulty:bool,

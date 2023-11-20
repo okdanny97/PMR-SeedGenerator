@@ -1,4 +1,4 @@
-from models.options.option_utility import get_option_default_value
+from .option_utility import get_option_default_value
 
 class MysteryOptionSet():
     def __init__(self):

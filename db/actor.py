@@ -1,7 +1,7 @@
 import json
 
 from peewee import *
-from db.db import db
+from .db import db
 
 
 class Actor(Model):

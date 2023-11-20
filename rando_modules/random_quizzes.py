@@ -4,7 +4,7 @@ various areas of the game.
 """
 import random
 
-from db.quiz import Quiz
+from ..db.quiz import Quiz
 
 
 def get_randomized_quizzes() -> list:

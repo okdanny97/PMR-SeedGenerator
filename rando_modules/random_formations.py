@@ -1,8 +1,8 @@
 import random
 
-from db.actor import Actor
+from ..db.actor import Actor
 
-from metadata.formations_meta import (
+from ..metadata.formations_meta import (
     front_row_enemies,
     chapter_battle_mapping,
     dont_randomize_formations,

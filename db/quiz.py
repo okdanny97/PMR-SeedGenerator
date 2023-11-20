@@ -2,7 +2,7 @@ import json
 
 from peewee import *
 from playhouse.sqlite_ext import JSONField
-from db.db import db
+from .db import db
 
 
 class Quiz(Model):

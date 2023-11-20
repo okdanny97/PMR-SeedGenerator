@@ -1,4 +1,4 @@
-from db.option import Option
+from ...db.option import Option
 
 
 def get_option_default_value(option_str: str):

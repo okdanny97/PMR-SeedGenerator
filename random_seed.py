@@ -2,22 +2,22 @@ from copy import deepcopy
 import random
 import datetime
 
-from rando_enums.enum_options import (
+from .rando_enums.enum_options import (
     BowserCastleMode,
     GearShuffleMode,
     PartnerUpgradeShuffle
 )
 
-from itemhints import get_itemhints
-from models.CoinPalette import CoinPalette
-from models.options.OptionSet import OptionSet
-from rando_modules.logic import \
+from .itemhints import get_itemhints
+from .models.CoinPalette import CoinPalette
+from .models.options.OptionSet import OptionSet
+from .rando_modules.logic import \
     place_items,\
     get_item_spheres,\
     get_items_to_exclude
-from rando_modules.random_blocks import get_block_placement
-from rando_modules.random_actor_stats import get_shuffled_chapter_difficulty
-from rando_modules.modify_entrances import (
+from .rando_modules.random_blocks import get_block_placement
+from .rando_modules.random_actor_stats import get_shuffled_chapter_difficulty
+from .rando_modules.modify_entrances import (
     get_shorter_bowsercastle,
     get_bowsercastle_bossrush,
     get_gear_location_shuffle,
@@ -28,32 +28,32 @@ from rando_modules.modify_entrances import (
     get_specific_spirits,
     get_limited_chapter_logic
 )
-from rando_modules.random_entrances import shuffle_dungeon_entrances
-from rando_modules.random_formations import get_random_formations
-from rando_modules.random_movecosts import get_randomized_moves
-from rando_modules.random_mystery import get_random_mystery
-from rando_modules.random_palettes import \
+from .rando_modules.random_entrances import shuffle_dungeon_entrances
+from .rando_modules.random_formations import get_random_formations
+from .rando_modules.random_movecosts import get_randomized_moves
+from .rando_modules.random_mystery import get_random_mystery
+from .rando_modules.random_palettes import \
     get_randomized_coinpalette,\
     get_randomized_palettes
-from rando_modules.random_audio import get_randomized_audio
-from rando_modules.random_partners import get_rnd_starting_partners
-from rando_modules.random_quizzes import get_randomized_quizzes
-from rando_modules.random_shop_prices import get_shop_price
-from rando_modules.unbeatable_seed_error import UnbeatableSeedError
-from worldgraph import \
+from .rando_modules.random_audio import get_randomized_audio
+from .rando_modules.random_partners import get_rnd_starting_partners
+from .rando_modules.random_quizzes import get_randomized_quizzes
+from .rando_modules.random_shop_prices import get_shop_price
+from .rando_modules.unbeatable_seed_error import UnbeatableSeedError
+from .worldgraph import \
     generate as generate_world_graph,\
     check_unreachable_from_start,\
     enrich_graph_data
 
-from rando_enums.enum_ingame import StarSpirits
-from metadata.starting_maps import starting_maps
-from metadata.starting_items import \
+from .rando_enums.enum_ingame import StarSpirits
+from .metadata.starting_maps import starting_maps
+from .metadata.starting_items import \
     allowed_starting_badges,\
     allowed_starting_items,\
     allowed_starting_key_items
-from metadata.item_general import seed_hash_item_names
+from .metadata.item_general import seed_hash_item_names
 
-from db.item import Item
+from .db.item import Item
 
 class RandomSeed:
     def __init__(self, rando_settings: OptionSet, seed_value=None) -> None:

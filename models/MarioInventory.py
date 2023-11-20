@@ -3,7 +3,7 @@ This module represents Mario's inventory as an abstract object for simulating
 world traversal. This is required for checking randomization logic.
 """
 
-from metadata.partners_meta import all_partners
+from ..metadata.partners_meta import all_partners
 
 class MarioInventory:
     """

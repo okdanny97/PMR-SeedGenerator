@@ -1,8 +1,8 @@
-from db.item import Item
-from db.option import Option
+from ...db.item import Item
+from ...db.option import Option
 
-from rando_enums.enum_ingame import StarSpirits
-from rando_enums.enum_options import (
+from ...rando_enums.enum_ingame import StarSpirits
+from ...rando_enums.enum_options import (
     BowserCastleMode,
     IncludeFavorsMode,
     IncludeLettersMode,
@@ -16,11 +16,11 @@ from rando_enums.enum_options import (
     MusicRandomizationType,
     PartnerUpgradeShuffle
 )
-from models.options.PaletteOptionSet import PaletteOptionSet
-from models.options.MysteryOptionSet import MysteryOptionSet
-from models.options.GlitchOptionSet import GlitchOptionSet
+from .PaletteOptionSet import PaletteOptionSet
+from .MysteryOptionSet import MysteryOptionSet
+from .GlitchOptionSet import GlitchOptionSet
 
-from models.options.option_utility import get_option_default_value
+from .option_utility import get_option_default_value
 
 class OptionSet:
     def __init__(self):

@@ -4,9 +4,9 @@ This module can modify the placement of different block types within the world.
 
 import random
 
-from db.block import Block
+from ..db.block import Block
 
-from rando_enums.enum_types import BlockType
+from ..rando_enums.enum_types import BlockType
 
 
 def get_block_placement(

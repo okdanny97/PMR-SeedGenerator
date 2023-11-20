@@ -4,9 +4,9 @@ and partner moves and SP costs for star power moves.
 """
 import random
 
-from db.move import Move
+from ..db.move import Move
 
-from rando_enums.enum_options import RandomMoveCosts
+from ..rando_enums.enum_options import RandomMoveCosts
 
 
 value_limits = {

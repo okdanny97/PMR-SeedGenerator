@@ -2,9 +2,9 @@ import xml.dom.minidom
 
 from peewee import *
 
-from db.db import db
-from metadata.progression_items import progression_items
-from metadata.item_general import (
+from .db import db
+from ..metadata.progression_items import progression_items
+from ..metadata.item_general import (
     unused_items,
     unused_duplicates,
     unplaceable_items

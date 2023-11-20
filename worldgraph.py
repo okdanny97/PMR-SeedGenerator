@@ -4,36 +4,36 @@ connections between them to allow simulated traversal of the in-game world.
 """
 import logging
 
-from metadata.area_name_mappings import area_name_id_map, area_name_edges_map
+from .metadata.area_name_mappings import area_name_id_map, area_name_edges_map
 
-from db.node import Node
-from db.map_area import MapArea
+from .db.node import Node
+from .db.map_area import MapArea
 
-from maps.graph_edges.base_graph.edges_arn import edges_arn
-from maps.graph_edges.base_graph.edges_dgb import edges_dgb
-from maps.graph_edges.base_graph.edges_dro import edges_dro
-from maps.graph_edges.base_graph.edges_flo import edges_flo
-from maps.graph_edges.base_graph.edges_hos import edges_hos
-from maps.graph_edges.base_graph.edges_isk import edges_isk
-from maps.graph_edges.base_graph.edges_iwa import edges_iwa
-from maps.graph_edges.base_graph.edges_jan import edges_jan
-from maps.graph_edges.base_graph.edges_kgr import edges_kgr
-from maps.graph_edges.base_graph.edges_kkj import edges_kkj
-from maps.graph_edges.base_graph.edges_kmr import edges_kmr
-from maps.graph_edges.base_graph.edges_kpa import edges_kpa
-from maps.graph_edges.base_graph.edges_kzn import edges_kzn
-from maps.graph_edges.base_graph.edges_mac import edges_mac
-from maps.graph_edges.base_graph.edges_mgm import edges_mgm
-from maps.graph_edges.base_graph.edges_mim import edges_mim
-from maps.graph_edges.base_graph.edges_nok import edges_nok
-from maps.graph_edges.base_graph.edges_obk import edges_obk
-from maps.graph_edges.base_graph.edges_omo import edges_omo
-from maps.graph_edges.base_graph.edges_osr import edges_osr
-from maps.graph_edges.base_graph.edges_pra import edges_pra
-from maps.graph_edges.base_graph.edges_sam import edges_sam
-from maps.graph_edges.base_graph.edges_sbk import edges_sbk
-from maps.graph_edges.base_graph.edges_tik import edges_tik
-from maps.graph_edges.base_graph.edges_trd import edges_trd
+from .maps.graph_edges.base_graph.edges_arn import edges_arn
+from .maps.graph_edges.base_graph.edges_dgb import edges_dgb
+from .maps.graph_edges.base_graph.edges_dro import edges_dro
+from .maps.graph_edges.base_graph.edges_flo import edges_flo
+from .maps.graph_edges.base_graph.edges_hos import edges_hos
+from .maps.graph_edges.base_graph.edges_isk import edges_isk
+from .maps.graph_edges.base_graph.edges_iwa import edges_iwa
+from .maps.graph_edges.base_graph.edges_jan import edges_jan
+from .maps.graph_edges.base_graph.edges_kgr import edges_kgr
+from .maps.graph_edges.base_graph.edges_kkj import edges_kkj
+from .maps.graph_edges.base_graph.edges_kmr import edges_kmr
+from .maps.graph_edges.base_graph.edges_kpa import edges_kpa
+from .maps.graph_edges.base_graph.edges_kzn import edges_kzn
+from .maps.graph_edges.base_graph.edges_mac import edges_mac
+from .maps.graph_edges.base_graph.edges_mgm import edges_mgm
+from .maps.graph_edges.base_graph.edges_mim import edges_mim
+from .maps.graph_edges.base_graph.edges_nok import edges_nok
+from .maps.graph_edges.base_graph.edges_obk import edges_obk
+from .maps.graph_edges.base_graph.edges_omo import edges_omo
+from .maps.graph_edges.base_graph.edges_osr import edges_osr
+from .maps.graph_edges.base_graph.edges_pra import edges_pra
+from .maps.graph_edges.base_graph.edges_sam import edges_sam
+from .maps.graph_edges.base_graph.edges_sbk import edges_sbk
+from .maps.graph_edges.base_graph.edges_tik import edges_tik
+from .maps.graph_edges.base_graph.edges_trd import edges_trd
 
 
 class hashabledict(dict):

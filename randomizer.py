@@ -11,30 +11,30 @@ import yaml
 from yaml.loader import SafeLoader
 from pathlib import Path
 
-from models.WebSeedResponse import WebSeedResponse
-from random_seed import RandomSeed
-from table import Table
-from parse import gather_keys, gather_values
-from calculate_crc import recalculate_crcs
+from .models.WebSeedResponse import WebSeedResponse
+from .random_seed import RandomSeed
+from .table import Table
+from .parse import gather_keys, gather_values
+from .calculate_crc import recalculate_crcs
 
-from models.options.OptionSet import OptionSet, PaletteOptionSet
+from .models.options.OptionSet import OptionSet, PaletteOptionSet
 
-from spoilerlog import write_spoiler_log
-from db.option          import Option, create_options
-from db.map_meta        import create_mapmeta
-from db.item            import create_items
-from db.node            import create_nodes
-from db.block           import create_blocks
-from db.actor           import create_actors
-from db.actor_params    import create_actor_params
-from db.actor_attribute import create_actor_attributes
-from db.move            import create_moves
-from db.quiz            import create_quizzes
-from db.palette         import Palette, create_palettes
-from rando_modules.random_palettes     \
+from .spoilerlog import write_spoiler_log
+from .db.option          import Option, create_options
+from .db.map_meta        import create_mapmeta
+from .db.item            import create_items
+from .db.node            import create_nodes
+from .db.block           import create_blocks
+from .db.actor           import create_actors
+from .db.actor_params    import create_actor_params
+from .db.actor_attribute import create_actor_attributes
+from .db.move            import create_moves
+from .db.quiz            import create_quizzes
+from .db.palette         import Palette, create_palettes
+from .rando_modules.random_palettes     \
     import get_randomized_coinpalette, \
            get_randomized_palettes
-from rando_modules.random_audio import get_randomized_audio
+from .rando_modules.random_audio import get_randomized_audio
 
 
 BASE_MOD_VERSION = "0.10.0 (beta)"

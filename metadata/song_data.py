@@ -2,7 +2,7 @@
 This file provides the data and categorization for different songs and
 song variations used in the random audio module.
 """
-from rando_enums.enum_types import SongType, SongMood
+from ..rando_enums.enum_types import SongType, SongMood
 
 class SongData:
     def __init__(
