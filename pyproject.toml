@@ -6,3 +6,7 @@ dependencies = [
     "pyyaml",
     "firebase-admin==5.2.0"
 ]
+
+[tool.setuptools]
+packages = ["db", "maps", "maps.graph_edges", "maps.links", "metadata", "models", "models.options", "rando_enums",
+    "rando_modules", ]
