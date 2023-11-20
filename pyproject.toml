@@ -17,6 +17,22 @@ dependencies = [
 ]
 
 [tool.setuptools]
-packages = ["db", "maps", "maps.graph_edges", "maps.links", "metadata", "models", "models.options", "rando_enums",
-    "rando_modules", ]
+packages = [
+    "db",
+    "maps",
+    "maps.graph_edges",
+    "maps.graph_edges.base_graph",
+    "maps.graph_edges.bc_bossrush",
+    "maps.graph_edges.bc_shorten",
+    "maps.graph_edges.gear_lcoation_shuffle",
+    "maps.graph_edges.glitched_logic",
+    "maps.graph_edges.partner_upgrade_shuffle",
+    "maps.graph_edges.star_hunt",
+
+    "metadata",
+    "models",
+    "models.options",
+    "rando_enums",
+    "rando_modules",
+]
 
