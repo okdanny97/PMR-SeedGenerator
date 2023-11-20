@@ -1,6 +1,15 @@
 [project]
 name = "pmrseedgen"
 version="2023.11.20"
+
+[build-system]
+requires = [
+    "setuptools",
+    "setuptools-scm",
+    "cython"
+]
+build-backend = "setuptools.build_meta"
+
 dependencies = [
     "peewee==3.14.4",
     "pyyaml",
@@ -11,12 +20,3 @@ dependencies = [
 packages = ["db", "maps", "maps.graph_edges", "maps.links", "metadata", "models", "models.options", "rando_enums",
     "rando_modules", ]
 
-[build-system]
-requires = [
-    "setuptools",
-    "setuptools-scm",
-    "ez_setup",
-    "unroll",
-    "cython"
-]
-build-backend = "setuptools.build_meta"
