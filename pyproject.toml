@@ -18,7 +18,7 @@ dependencies = [
 
 [tool.setuptools]
 packages = [
-    ".",
+    "pmrseedgen",
     "db",
     "maps",
     "maps.graph_edges",
