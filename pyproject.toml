@@ -10,3 +10,8 @@ dependencies = [
 [tool.setuptools]
 packages = ["db", "maps", "maps.graph_edges", "maps.links", "metadata", "models", "models.options", "rando_enums",
     "rando_modules", ]
+
+[build-system]
+requires = [
+    "cython"
+]
