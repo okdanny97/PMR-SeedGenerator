@@ -18,6 +18,7 @@ dependencies = [
 
 [tool.setuptools]
 packages = [
+    ".",
     "db",
     "maps",
     "maps.graph_edges",
