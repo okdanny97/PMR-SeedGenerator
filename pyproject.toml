@@ -1,5 +1,6 @@
 [project]
 name = "pmrseedgen"
+version="archipelago-0.1"
 dependencies = [
     "peewee==3.14.4",
     "pyyaml",
