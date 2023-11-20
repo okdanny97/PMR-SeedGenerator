@@ -13,5 +13,8 @@ packages = ["db", "maps", "maps.graph_edges", "maps.links", "metadata", "models"
 
 [build-system]
 requires = [
+    "setuptools",
+    "setuptools-scm",
     "cython"
 ]
+build-backend = "setuptools.build_meta"
